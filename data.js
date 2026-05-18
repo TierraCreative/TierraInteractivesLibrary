@@ -309,16 +309,7 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/b6efaee54c94b4f2185098bdfd62750d82d6ccce_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
-{
-  id: 32,
-  name: "Sorting Game — Shelf Life 30% Off",
-  client: "MOOD",
-  category: "ECOM",
-  ctaColor: "#333333",
-  date: "Jan 27, 2026",
-  videoUrl: "https://res1.applovin.com/re3d42cc/36bd58566ebd41d6743046ac6532ea4006f54254_raw.mp4",
-  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
-},
+
 {
   id: 33,
   name: "Cascading Products — Quiz CTA",
