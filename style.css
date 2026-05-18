@@ -83,7 +83,7 @@ body {
 
 .logo-sub {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--lime);
   letter-spacing: .12em;
