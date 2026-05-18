@@ -5,53 +5,39 @@
 (function () {
   'use strict';
 
-  // ── State ──────────────────────────────────────────────────
   let activeFilter = 'all';
-  let searchQuery = '';
-  let activeCard = null;
+  let searchQuery  = '';
+  let activeCard   = null;
 
-  // ── DOM refs ───────────────────────────────────────────────
-  const grid         = document.getElementById('cardGrid');
-  const cardCount    = document.getElementById('cardCount');
-  const filterBtns   = document.querySelectorAll('.filter-btn');
-  const searchInput  = document.getElementById('searchInput');
-  const backdrop     = document.getElementById('modalBackdrop');
-  const modalClose   = document.getElementById('modalClose');
-  const modalIframe  = document.getElementById('modalIframe');
-  const modalTitle   = document.getElementById('modalTitle');
-  const modalClient  = document.getElementById('modalClient');
-  const modalDate    = document.getElementById('modalDate');
-  const modalTag     = document.getElementById('modalTag');
+  const grid           = document.getElementById('cardGrid');
+  const cardCount      = document.getElementById('cardCount');
+  const filterBtns     = document.querySelectorAll('.filter-btn');
+  const searchInput    = document.getElementById('searchInput');
+  const backdrop       = document.getElementById('modalBackdrop');
+  const modalClose     = document.getElementById('modalClose');
+  const modalVideo     = document.getElementById('modalVideo');
+  const modalTitle     = document.getElementById('modalTitle');
+  const modalClient    = document.getElementById('modalClient');
+  const modalDate      = document.getElementById('modalDate');
+  const modalTag       = document.getElementById('modalTag');
   const modalDriveLink = document.getElementById('modalDriveLink');
-  const modalCopyBtn = document.getElementById('modalCopyBtn');
-  const copyConfirm  = document.getElementById('copyConfirm');
-  const ctaDot       = document.getElementById('ctaDot');
-  const ctaBadgeText = document.getElementById('ctaBadgeText');
+  const modalCopyBtn   = document.getElementById('modalCopyBtn');
+  const copyConfirm    = document.getElementById('copyConfirm');
+  const modalCtaBtn    = document.getElementById('modalCtaBtn');
   const modalCtaSwatch = document.getElementById('modalCtaSwatch');
-  const modalCtaInfo = document.getElementById('modalCtaInfo');
+  const modalCtaInfo   = document.getElementById('modalCtaInfo');
 
-  // ── Scale iframes to fit their containers ─────────────────
-  // Cards: iframe is 390×844, container is card width × 9/16 of width
-  // We scale the iframe down to fit
-  function scaleIframe(iframe, containerW, containerH) {
-    const scaleX = containerW / 390;
-    const scaleY = containerH / 844;
-    const scale = Math.min(scaleX, scaleY);
-    iframe.style.transform = `scale(${scale})`;
-  }
-
-  function setupCardIframe(iframe, card) {
-    const preview = card.querySelector('.card-preview');
-    const rect = preview.getBoundingClientRect();
-    scaleIframe(iframe, rect.width, rect.height);
-  }
-
-  function setupModalIframe() {
-    // phone screen: 200px wide × 430px tall (inner)
-    scaleIframe(modalIframe, 196, 426);
+  // ── Text contrast helper ───────────────────────────────────
+  function getTextColor(hex) {
+    const r = parseInt(hex.slice(1,3),16);
+    const g = parseInt(hex.slice(3,5),16);
+    const b = parseInt(hex.slice(5,7),16);
+    const lum = (0.299*r + 0.587*g + 0.114*b) / 255;
+    return lum > 0.55 ? '#000000' : '#ffffff';
   }
 
   // ── Filter & Search ────────────────────────────────────────
+
   function getFiltered() {
     return CARDS.filter(c => {
       const matchFilter = activeFilter === 'all' || c.category === activeFilter;
@@ -64,7 +50,8 @@
     });
   }
 
-  // ── Render grid ────────────────────────────────────────────
+  // ── Render ─────────────────────────────────────────────────
+
   function render() {
     const filtered = getFiltered();
     cardCount.textContent = `${filtered.length} card${filtered.length !== 1 ? 's' : ''}`;
@@ -76,20 +63,22 @@
     }
 
     filtered.forEach((c, idx) => {
+      const textColor = getTextColor(c.ctaColor);
       const card = document.createElement('div');
       card.className = 'card';
-      card.style.animationDelay = `${idx * 40}ms`;
+      card.style.animationDelay = `${idx * 35}ms`;
+
       card.innerHTML = `
-        <div class="card-preview" id="preview-${c.id}">
-          <iframe
-            src="${c.htmlFile}"
-            title="${c.name}"
-            sandbox="allow-scripts allow-same-origin"
-            loading="lazy"
-            id="iframe-${c.id}"
-          ></iframe>
-          <div class="card-cta-hint">
-            <span class="card-cta-hint-label">↑ CTA zone — leave clear</span>
+        <div class="card-preview">
+          <video
+            src="${c.videoUrl}"
+            autoplay muted loop playsinline
+            preload="metadata"
+          ></video>
+          <div class="card-cta">
+            <div class="card-cta-btn" style="background:${c.ctaColor}; color:${textColor};">
+              Shop Now
+            </div>
           </div>
         </div>
         <div class="card-body">
@@ -99,51 +88,32 @@
           </div>
           <div class="card-name">${c.name}</div>
           <div class="card-client">${c.client}</div>
-          <div class="card-cta-row">
-            <span class="cta-dot" style="background:${c.ctaColor};"></span>
-            <span class="cta-label">${c.ctaText} · ${c.ctaPosition} · ${c.ctaColor}</span>
-          </div>
         </div>
       `;
 
       card.addEventListener('click', () => openModal(c));
       grid.appendChild(card);
-
-      // scale iframe after layout
-      const iframe = card.querySelector(`#iframe-${c.id}`);
-      iframe.addEventListener('load', () => setupCardIframe(iframe, card));
-      // also scale once immediately (in case already cached)
-      requestAnimationFrame(() => setupCardIframe(iframe, card));
-    });
-
-    // re-scale all on resize
-    window.addEventListener('resize', () => {
-      document.querySelectorAll('.card').forEach(card => {
-        const id = card.querySelector('[id^="iframe-"]')?.id.replace('iframe-', '');
-        const iframe = card.querySelector(`#iframe-${id}`);
-        if (iframe) setupCardIframe(iframe, card);
-      });
     });
   }
 
   // ── Modal ──────────────────────────────────────────────────
+
   function openModal(c) {
     activeCard = c;
 
-    modalTag.textContent        = c.category;
-    modalTitle.textContent      = c.name;
-    modalClient.textContent     = `Client: ${c.client}`;
-    modalDate.textContent       = `Created: ${c.date}`;
-    modalDriveLink.href         = c.driveUrl;
-    modalCtaSwatch.style.background = c.ctaColor;
-    modalCtaInfo.textContent    = `"${c.ctaText}" · ${c.ctaPosition} · ${c.ctaColor}`;
-    ctaDot.style.background     = c.ctaColor;
-    ctaBadgeText.textContent    = `CTA: ${c.ctaPosition} — leave blank`;
+    const textColor = getTextColor(c.ctaColor);
 
-    // load iframe
-    modalIframe.src = c.htmlFile;
-    modalIframe.onload = setupModalIframe;
-    setupModalIframe();
+    modalTag.textContent            = c.category;
+    modalTitle.textContent          = c.name;
+    modalClient.textContent         = `Client: ${c.client}`;
+    modalDate.textContent           = `Created: ${c.date}`;
+    modalDriveLink.href             = c.driveUrl;
+    modalCtaSwatch.style.background = c.ctaColor;
+    modalCtaInfo.textContent        = `"Shop Now" · bottom · ${c.ctaColor}`;
+    modalCtaBtn.style.background    = c.ctaColor;
+    modalCtaBtn.style.color         = textColor;
+    modalVideo.src                  = c.videoUrl;
+    modalVideo.play();
 
     backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -152,13 +122,14 @@
   function closeModal() {
     backdrop.classList.remove('open');
     document.body.style.overflow = '';
-    // pause video in iframe by blanking src, then restore
-    modalIframe.src = '';
+    modalVideo.pause();
+    modalVideo.src = '';
     activeCard = null;
     copyConfirm.classList.remove('show');
   }
 
   // ── Events ─────────────────────────────────────────────────
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -185,8 +156,7 @@
 
   modalCopyBtn.addEventListener('click', () => {
     if (!activeCard) return;
-    const filename = activeCard.htmlFile.split('/').pop();
-    navigator.clipboard.writeText(filename).then(() => {
+    navigator.clipboard.writeText(activeCard.videoUrl).then(() => {
       copyConfirm.classList.add('show');
       setTimeout(() => copyConfirm.classList.remove('show'), 2000);
     });
