@@ -6,7 +6,7 @@
   <title>Tierra Interactives Library</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,11 +18,9 @@
         <span class="logo-divider">/</span>
         <span class="logo-sub">INTERACTIVES</span>
       </div>
-      <div class="header-right">
-        <span class="card-count" id="cardCount">— cards</span>
-      </div>
+      <span class="card-count" id="cardCount">28 cards</span>
     </div>
-    <div class="filter-bar" id="filterBar">
+    <div class="filter-bar">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="ECOM">ECOM</button>
       <button class="filter-btn" data-filter="BEV">BEV</button>
@@ -40,26 +38,25 @@
     <div class="modal" id="modal">
       <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
       <div class="modal-layout">
-        <div class="modal-preview" id="modalPreview">
+
+        <div class="modal-preview">
           <div class="phone-shell">
             <div class="phone-notch"></div>
             <div class="phone-screen">
-              <iframe id="modalIframe" title="Interactive Preview" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>
-              <div class="cta-badge" id="ctaBadge">
-                <span class="cta-badge-dot" id="ctaDot"></span>
-                <span id="ctaBadgeText">CTA: bottom — leave blank</span>
-              </div>
+              <video id="modalVideo" autoplay muted loop playsinline></video>
+              <div class="modal-cta-btn" id="modalCtaBtn">Shop Now</div>
             </div>
           </div>
         </div>
-        <div class="modal-info" id="modalInfo">
+
+        <div class="modal-info">
           <div class="modal-tag" id="modalTag"></div>
           <h2 class="modal-title" id="modalTitle"></h2>
           <p class="modal-client" id="modalClient"></p>
           <p class="modal-date" id="modalDate"></p>
 
           <div class="modal-section">
-            <div class="modal-label">CTA Button</div>
+            <div class="modal-label">CTA button</div>
             <div class="cta-row">
               <span class="cta-swatch" id="modalCtaSwatch"></span>
               <span class="cta-info" id="modalCtaInfo"></span>
@@ -69,19 +66,17 @@
           <div class="modal-section">
             <div class="modal-label">Designer notes</div>
             <div class="notes-box">
-              The CTA button is auto-injected by Axon at the <strong>bottom</strong> of the frame. Leave that zone clear in the source video — do not place text or product imagery within the bottom ~15% of the frame.
+              The <strong>Shop Now</strong> CTA button is auto-injected by Axon at the <strong>bottom</strong> of the frame. Leave the bottom ~15% of the source video clear — no text, product, or key visuals in that zone.
             </div>
           </div>
 
           <div class="modal-actions">
-            <a class="btn-primary" id="modalDriveLink" href="#" target="_blank" rel="noopener">
-              Open Raw Files →
-            </a>
-            <button class="btn-secondary" id="modalCopyBtn">Copy HTML filename</button>
+            <a class="btn-primary" id="modalDriveLink" href="#" target="_blank" rel="noopener">Open raw files →</a>
+            <button class="btn-secondary" id="modalCopyBtn">Copy video URL</button>
           </div>
-
           <div class="copy-confirm" id="copyConfirm">Copied!</div>
         </div>
+
       </div>
     </div>
   </div>
