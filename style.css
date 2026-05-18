@@ -82,11 +82,11 @@ body {
 }
 
 .logo-sub {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 600;
+  font-family: "Owners XWide Black", sans-serif;
+  font-size: 22px;
+  font-weight: 808;
   color: var(--lime);
-  letter-spacing: .12em;
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 
