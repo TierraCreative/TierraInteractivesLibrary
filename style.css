@@ -55,10 +55,8 @@ body {
 }
 
 .site-logo {
-  height: 36px;
+  height: 40px;
   width: auto;
-  filter: invert(1) brightness(2);
-  mix-blend-mode: screen;
 }
 
 .logo-word {
