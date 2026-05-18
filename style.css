@@ -70,7 +70,7 @@ body {
 .logo-sub {
   font-size: 10px;
   font-weight: 600;
-  color: var(--accent);
+  color: #00E5FF;
   letter-spacing: .14em;
   text-transform: uppercase;
 }
