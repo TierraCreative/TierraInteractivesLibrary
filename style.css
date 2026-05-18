@@ -68,10 +68,10 @@ body {
 .logo-divider { color: var(--muted); font-size: 17px; line-height: 1; }
 
 .logo-sub {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 600;
   color: #00E5FF;
-  letter-spacing: .14em;
+  letter-spacing: .10em;
   text-transform: uppercase;
 }
 
