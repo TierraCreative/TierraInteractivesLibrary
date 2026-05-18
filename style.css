@@ -14,7 +14,7 @@
   --muted:    #6b6b80;
   --accent:   #a0f0b0;
   --accent2:  #6060ff;
-  --head:     'Syne', sans-serif;
+  --head:     'Montserrat', sans-serif;
   --mono:     'DM Mono', monospace;
   --radius:   12px;
 }
@@ -49,9 +49,16 @@ body {
 
 .logo-block {
   display: flex;
-  align-items: baseline;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
   font-family: var(--head);
+}
+
+.site-logo {
+  height: 32px;
+  width: auto;
+  mix-blend-mode: screen;
+  filter: brightness(10);
 }
 
 .logo-word {
@@ -60,7 +67,7 @@ body {
   letter-spacing: .04em;
 }
 
-.logo-divider { color: var(--muted); font-size: 17px; }
+.logo-divider { color: var(--muted); font-size: 17px; line-height: 1; }
 
 .logo-sub {
   font-size: 10px;
