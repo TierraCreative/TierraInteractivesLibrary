@@ -281,15 +281,4 @@ const CARDS = [
 
   // ── CREATIVE ──────────────────────────────────────────────
 
-  {
-    id: 28,
-    name: "Losing My Libido",
-    client: "MOOD",
-    category: "ECOM",
-    ctaColor: "#6060FF",
-    date: "2026",
-    videoUrl: "https://res1.applovin.com/re3d42cc/3d60fe13fbf65ac54d55ae0b8a37ff72404a9746_raw.mp4",
-    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
-  },
-
 ];
