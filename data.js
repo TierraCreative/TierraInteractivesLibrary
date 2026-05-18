@@ -279,6 +279,56 @@ const CARDS = [
     driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
   },
 
+  {
+  id: 29,
+  name: "Choose Your Reward — Card Selection",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#7B2FF1",
+  date: "Feb 14, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/99a28cbd0a586a75a3f6ddda579552cf4706189f_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 30,
+  name: "MOOD Merge — Gamified",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#1EF73A",
+  date: "Feb 19, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/ad6ab7d4d17a831c7c9aac3510aacf22c6a7a3fc_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 31,
+  name: "Spinning Prize Wheel — Sexual Euphoria",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#333333",
+  date: "Jul 25, 2023",
+  videoUrl: "https://res1.applovin.com/re3d42cc/b6efaee54c94b4f2185098bdfd62750d82d6ccce_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 32,
+  name: "Sorting Game — Shelf Life 30% Off",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#333333",
+  date: "Jan 27, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/36bd58566ebd41d6743046ac6532ea4006f54254_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 33,
+  name: "Cascading Products — Quiz CTA",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#026E40",
+  date: "Jan 10, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/8d285866531ae1f9fdf227829dc6ba6b52b1961e_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+}
   // ── CREATIVE ──────────────────────────────────────────────
 
 ];
