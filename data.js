@@ -278,16 +278,6 @@ const CARDS = [
     videoUrl: "https://res1.applovin.com/re3d42cc/8b73b67c578c3f06157de889a1b383280e465828_raw.mp4",
     driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
   },
-  {
-    id: 27,
-    name: "Cascading Products — Quiz CTA",
-    client: "MOOD",
-    category: "ECOM",
-    ctaColor: "#026E40",
-    date: "Jan 10, 2026",
-    videoUrl: "https://res1.applovin.com/re3d42cc/8d285866531ae1f9fdf227829dc6ba6b52b1961e_raw.mp4",
-    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
-  },
 
   // ── CREATIVE ──────────────────────────────────────────────
 
