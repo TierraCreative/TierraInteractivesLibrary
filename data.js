@@ -1,0 +1,417 @@
+// ============================================================
+// TIERRA INTERACTIVES LIBRARY — data.js
+// ------------------------------------------------------------
+// To add a new card:
+//   1. Copy an object below and paste it at the TOP of the array
+//   2. Fill in name, client, category, ctaColor, ctaText, driveUrl
+//   3. Set htmlFile to the filename inside the /interactives/ folder
+//   4. Drop the .html file into /interactives/
+// ============================================================
+
+const CARDS = [
+
+  // ── MAY 2026 ─────────────────────────────────────────────
+
+  {
+    id: 1,
+    name: "iPhone Call",
+    client: "Mind Magic",
+    category: "ECOM",
+    ctaColor: "#2700FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 13, 2026",
+    htmlFile: "interactives/13_05_26-Video-Interactive-ECOM-MindMagic-Tierra-iPhoneCall-457_mp4__2_.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "product"]
+  },
+  {
+    id: 2,
+    name: "A Better Way To Buzz — Checkers",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#E000FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-Checkers-ABetterWayToBuzz-449_mp4__1_.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "brand"]
+  },
+  {
+    id: 3,
+    name: "Guilt Free Buzz",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#F100FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-GuiltFreeBuzz-452_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "lifestyle"]
+  },
+  {
+    id: 4,
+    name: "Hemp Derived — Flavor Obsessed",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#F900FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-HempDerivedFlavorObsessed-454_mp4__2_.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "product"]
+  },
+  {
+    id: 5,
+    name: "Jackpot",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#FF00FC",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-Jackpot-451_mp4__1_.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "promo"]
+  },
+  {
+    id: 6,
+    name: "Shop Now",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#9500FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-SHOPNOW-450_mp4__1_.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "cta"]
+  },
+  {
+    id: 7,
+    name: "Search Bar",
+    client: "Cannabis Soda",
+    category: "BEV",
+    ctaColor: "#0024FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 12, 2026",
+    htmlFile: "interactives/12_05_26-Video-Interactives-BEV-Tierra-CannabisSoda-SearchBar-453_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "cannabis", "interactive"]
+  },
+  {
+    id: 8,
+    name: "Scrolling Landing Page V1",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#FF00EB",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 11, 2026",
+    htmlFile: "interactives/11_05_26-Video-Interactive-ECOM-ScrollingLandingPage-V1-446_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "landing-page"]
+  },
+  {
+    id: 9,
+    name: "Larger Disclaimer",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#026E40",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 11, 2026",
+    htmlFile: "interactives/11_05_26-Video-Interactive-Sleep-LargerDisclaimer-447_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "disclaimer"]
+  },
+  {
+    id: 10,
+    name: "MOOD Merge — Gamified",
+    client: "MOOD",
+    category: "BEV",
+    ctaColor: "#D800FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 5, 2026",
+    htmlFile: "interactives/05_05_26-BEV-Interactive-Gamified-MOODMerge-430_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["bev", "gamified", "mood"]
+  },
+  {
+    id: 11,
+    name: "Find Your Zen",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#BFFF00",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 5, 2026",
+    htmlFile: "interactives/05_05_26-Video-26_05_04-Interactive-ECOM-FindYourZen-9x16-425_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "mood", "lifestyle"]
+  },
+  {
+    id: 12,
+    name: "Fuel Your Focus",
+    client: "Mind Magic",
+    category: "ECOM",
+    ctaColor: "#E0FF00",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 5, 2026",
+    htmlFile: "interactives/05_05_26-Video-26_05_04-Interactive-ECOM-MindMagic-FuelYourFocus-9x16-428_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "product"]
+  },
+  {
+    id: 13,
+    name: "Fuel Your Focus V2",
+    client: "Mind Magic",
+    category: "ECOM",
+    ctaColor: "#D800FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "zoomInOut",
+    ctaPosition: "bottom",
+    date: "May 5, 2026",
+    htmlFile: "interactives/05_05_26-Video-26_05_04-Interactive-ECOM-MindMagic-FuelYourFocus-V2-9x16-426_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "product"]
+  },
+  {
+    id: 14,
+    name: "Fall Asleep Naturally — Stacked Gummies I3",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#00DDFF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 6, 2026",
+    htmlFile: "interactives/06_05_26-Video-26_05_06-Interactive-SLEEP-StackedGummies-Iterations-I3-FallAsleepNaturally-433_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "product"]
+  },
+  {
+    id: 15,
+    name: "Premium Gummies For Every Vibe",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#7300FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-26_05_08-Interactive-ECOM-PremiumGummiesForEveryVibe-442_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "product", "mood"]
+  },
+  {
+    id: 16,
+    name: "Falling Products 20% Off",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#FF00EB",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-INTERACTIVE_MOOD_ECOM_FALLINGPRODUCTS_20PERCENTOFF-441_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "promo", "mood"]
+  },
+  {
+    id: 17,
+    name: "iPhone Notes",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#F900FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-INTERACTIVE_MOOD_ECOM_IPHONENOTES-439.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "mood", "lifestyle"]
+  },
+  {
+    id: 18,
+    name: "8 Hours Deep Sleep",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#00FFA3",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-INTERACTIVE_MOOD_SLEEP_8HOURSDEEPSLEEP-440_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "lifestyle"]
+  },
+  {
+    id: 19,
+    name: "Moonlit Reviews",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#FF00A0",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-INTERACTIVE_MOOD_SLEEP_MOONLITREVIEWS-438_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "social-proof"]
+  },
+  {
+    id: 20,
+    name: "Recipe Slideshow",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#9500FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "May 8, 2026",
+    htmlFile: "interactives/08_05_26-Video-Interactive-SLEEP-May8-RecipeSlideshow-444_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "lifestyle"]
+  },
+
+  // ── APRIL 2026 ────────────────────────────────────────────
+
+  {
+    id: 21,
+    name: "Hand Pop-Up — Yes It's Legal",
+    client: "Mind Magic",
+    category: "ECOM",
+    ctaColor: "#CF00FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "Apr 30, 2026",
+    htmlFile: "interactives/23_04_30-Interactive-ECOM-MindMagic-HandPopUp-YesItsLegal-349_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "product", "interactive"]
+  },
+  {
+    id: 22,
+    name: "Flashing Products",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#F100FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "Apr 21, 2026",
+    htmlFile: "interactives/26_04_21-Interactive-MOOD-ECOM-FlashingProducts-302.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "mood", "product"]
+  },
+  {
+    id: 23,
+    name: "Better ZZZs Are Calling — Dark Blue",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#E900FF",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "Apr 22, 2026",
+    htmlFile: "interactives/26_04_22-Interactive-Sleep-BetterZZZsAreCalling-DarkBlue.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "brand"]
+  },
+  {
+    id: 24,
+    name: "Better ZZZs Are Calling — Light Blue",
+    client: "MOOD Sleep",
+    category: "Sleep",
+    ctaColor: "#FF00D2",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "Apr 22, 2026",
+    htmlFile: "interactives/26_04_22-Interactive-Sleep-BetterZZZsAreCalling-LightBlue_mp4.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["sleep", "brand"]
+  },
+
+  // ── JANUARY 2026 ──────────────────────────────────────────
+
+  {
+    id: 25,
+    name: "Sorting Game — Shelf Life 30% Off",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#FFFFFF",
+    ctaText: "Get 30% Off",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "Jan 27, 2026",
+    htmlFile: "interactives/27_01_26-Video-26_01_27-Video-MOOD-SortingGame-ShelfLife__off_CTA_-75.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "gamified", "promo"]
+  },
+  {
+    id: 26,
+    name: "Bouncing Gummies — Code APP30",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#026E40",
+    ctaText: "Claim 30% Off",
+    ctaAnimation: "zoomInOut",
+    ctaPosition: "bottom",
+    date: "Jan 30, 2026",
+    htmlFile: "interactives/30_01_26-Video-26_01_30-EndCard-BouncingGummies-CodeAPP30-TEST-V2-86.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "promo", "end-card"]
+  },
+  {
+    id: 27,
+    name: "Cascading Products End Card — Quiz CTA",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#026E40",
+    ctaText: "Take the Quiz",
+    ctaAnimation: "zoomInOut",
+    ctaPosition: "bottom",
+    date: "Jan 10, 2026",
+    htmlFile: "interactives/10_01_26-End_Card-MOODBOXCascadingProductsEndCard10MB9x16AR-1080x1920px-NM-9-Jan-25-V1_quiz_CTA_-12.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "quiz", "end-card"]
+  },
+
+  // ── CREATIVE / MISC ───────────────────────────────────────
+
+  {
+    id: 28,
+    name: "Losing My Libido",
+    client: "MOOD",
+    category: "ECOM",
+    ctaColor: "#6060ff",
+    ctaText: "Shop Now",
+    ctaAnimation: "bouncing",
+    ctaPosition: "bottom",
+    date: "2026",
+    htmlFile: "interactives/html_ADCR_MOD53_A_LosingMyLibido_9x16__AppL.html",
+    driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+    tags: ["ecom", "mood", "creative"]
+  }
+
+];
