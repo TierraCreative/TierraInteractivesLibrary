@@ -12,6 +12,16 @@ const CARDS = [
 
   // ── MAY 2026 ─────────────────────────────────────────────
 {
+  id: 38,
+  name: "Choose Your Boost",
+  client: "Mind Magic",
+  category: "ECOM",
+  ctaColor: "#0024FF",
+  date: "May 19, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/c76389929a12dc938bd57e0819c2a190d4cef4c2_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+  {
   id: 34,
   name: "Unlock Restful Nights",
   client: "MOOD Sleep",
