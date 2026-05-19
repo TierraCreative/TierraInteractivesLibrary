@@ -11,6 +11,46 @@
 const CARDS = [
 
   // ── MAY 2026 ─────────────────────────────────────────────
+{
+  id: 34,
+  name: "Unlock Restful Nights",
+  client: "MOOD Sleep",
+  category: "ECOM",
+  ctaColor: "#00FF03",
+  date: "May 19, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/301eb056ce2c5b265ffbeee148989dd4c70b17bb_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 35,
+  name: "Designed For Your Mind",
+  client: "Mind Magic",
+  category: "ECOM",
+  ctaColor: "#FF00EB",
+  date: "May 13, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/ae93d4360bb40dcd2c53e88b7228e6b03956758e_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 36,
+  name: "Tinder Match",
+  client: "Mind Magic",
+  category: "ECOM",
+  ctaColor: "#FF00E3",
+  date: "May 13, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/d502e3cae964190becef171b1096edb6b1db02bd_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 37,
+  name: "Your Mind Enhanced",
+  client: "Mind Magic",
+  category: "ECOM",
+  ctaColor: "#FF00D2",
+  date: "May 13, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/5642ea2f45d7af344f5d1e1ff980748822b60616_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
 
   {
     id: 1,
