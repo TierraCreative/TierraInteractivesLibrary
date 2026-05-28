@@ -12,6 +12,16 @@ const CARDS = [
 
   // ── MAY 2026 ─────────────────────────────────────────────
 {
+  id: 49,
+  name: "Tinder Match",
+  client: "Mind Magic",
+  category: "ECOM",
+  ctaColor: "#FF00E3",
+  date: "May 13, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/d502e3cae964190becef171b1096edb6b1db02bd_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+  {
   id: 47,
   name: "Ready To Lift Off",
   client: "MOOD",
