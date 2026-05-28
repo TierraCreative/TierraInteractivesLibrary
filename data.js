@@ -12,6 +12,26 @@ const CARDS = [
 
   // ── MAY 2026 ─────────────────────────────────────────────
 {
+  id: 47,
+  name: "Ready To Lift Off",
+  client: "MOOD",
+  category: "BEV",
+  ctaColor: "#E0FF00",
+  date: "May 22, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/0cbed5354cb8235cfb7e01effe2eccc5287c341d_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+{
+  id: 48,
+  name: "Candy Glow",
+  client: "MOOD",
+  category: "ECOM",
+  ctaColor: "#E0FF00",
+  date: "May 22, 2026",
+  videoUrl: "https://res1.applovin.com/re3d42cc/ef03d34ac19d2efa7bc2d66a914d24e1afe44948_raw.mp4",
+  driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+  {
   id: 39,
   name: "The Week Survived You",
   client: "MOOD",
