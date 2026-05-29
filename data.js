@@ -51,6 +51,15 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/aa57f0da27e1810b41d07cd09de785e14a0904f0_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
+  {
+  id: "30_10_25-End_Card-Hero_Format-32",
+  title: "End Card – Hero Format 32",
+  videoUrl: "https://res1.applovin.com/r5d4a6b7/8b61a0c16e0914a5588f21ed152eb809184029ea_raw.raw",
+  ctaColor: "#FF6400",
+  ctaText: "Shop Now",
+  client: "",
+  fileName: "30_10_25-End_Card-Hero_Format-32.html",
+},
 {
   id: 40,
   name: "Stressed To Relaxed",
