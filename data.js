@@ -168,6 +168,15 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/301eb056ce2c5b265ffbeee148989dd4c70b17bb_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
+  {
+  id: "20_11_25-End_Card-TimeFlies-42",
+  title: "End Card – Time Flies 42",
+  videoUrl: "https://res1.applovin.com/r5d4a6b7/7aedd2e4f4d2faa3b1218b32972f0e968aa19a6b_raw.raw",
+  ctaColor: "#00FF46",
+  ctaText: "Shop Now",
+  client: "",
+  fileName: "20_11_25-End_Card-25_11_20-EndCard-TimeFlies-42.html",
+},
 {
   id: 35,
   name: "Designed For Your Mind",
