@@ -169,16 +169,6 @@ const CARDS = [
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
 {
-  id: 50,
-  name: "Time Flies",
-  client: "Photostick",
-  category: "ECOM",
-  ctaColor: "#00FF46",
-  date: "November 20, 2025",
-  videoUrl: "https://res1.applovin.com/r5d4a6b7/7aedd2e4f4d2faa3b1218b32972f0e968aa19a6b_raw.mp4",
-  driveUrl: "",
-},
-{
   id: 35,
   name: "Designed For Your Mind",
   client: "Mind Magic",
@@ -504,16 +494,6 @@ const CARDS = [
   date: "Jul 25, 2023",
   videoUrl: "https://res1.applovin.com/re3d42cc/b6efaee54c94b4f2185098bdfd62750d82d6ccce_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
-},
-{
-  id: 51,
-  name: "Holiday Batch 3 – Snow Blue",
-  client: "Photostick",
-  category: "ECOM",
-  ctaColor: "#00FF08",
-  date: "December 5, 2025",
-  videoUrl: "https://res1.applovin.com/r5d4a6b7/36d73d7f5254df15c5fb4f2b4d3dcff454b9937d_raw.mp4",
-  driveUrl: "",
 },
   // ── CREATIVE ──────────────────────────────────────────────
 
