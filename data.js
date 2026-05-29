@@ -168,14 +168,14 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/301eb056ce2c5b265ffbeee148989dd4c70b17bb_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
- {
+{
   id: 50,
   name: "Time Flies",
   client: "Photostick",
   category: "ECOM",
   ctaColor: "#00FF46",
   date: "November 20, 2025",
-  videoUrl: "https://res1.applovin.com/r5d4a6b7/7aedd2e4f4d2faa3b1218b32972f0e968aa19a6b_raw.raw",
+  videoUrl: "https://res1.applovin.com/r5d4a6b7/7aedd2e4f4d2faa3b1218b32972f0e968aa19a6b_raw.mp4",
   driveUrl: "",
 },
 {
