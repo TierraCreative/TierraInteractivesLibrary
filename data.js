@@ -504,6 +504,15 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/b6efaee54c94b4f2185098bdfd62750d82d6ccce_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
+  {
+  id: "05_12_25-End_Card-HolidayBatch3-V1-ForestGreen-58",
+  title: "End Card – Holiday Batch 3 V1 – Forest Green 58",
+  videoUrl: "https://res1.applovin.com/r5d4a6b7/81fab96919025d300e643cf58a5fb2f889684cb2_raw.raw",
+  ctaColor: "#CB0707",
+  ctaText: "Shop Now",
+  client: "Photostick",
+  fileName: "05_12_25-End_Card-25_12_04-EndCard-HolidayBatch3-V1-ForestGreen-58.html",
+},
 
   // ── CREATIVE ──────────────────────────────────────────────
 
