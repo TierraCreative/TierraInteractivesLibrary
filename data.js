@@ -505,17 +505,16 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/b6efaee54c94b4f2185098bdfd62750d82d6ccce_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
- {
+{
   id: 51,
-  name: "Holiday Batch 3 – Forest Green",
+  name: "Holiday Batch 3 – Snow Blue",
   client: "Photostick",
   category: "ECOM",
-  ctaColor: "#CB0707",
+  ctaColor: "#00FF08",
   date: "December 5, 2025",
-  videoUrl: "https://res1.applovin.com/r5d4a6b7/81fab96919025d300e643cf58a5fb2f889684cb2_raw.mp4",
+  videoUrl: "https://res1.applovin.com/r5d4a6b7/36d73d7f5254df15c5fb4f2b4d3dcff454b9937d_raw.mp4",
   driveUrl: "",
 },
-
   // ── CREATIVE ──────────────────────────────────────────────
 
 ];
