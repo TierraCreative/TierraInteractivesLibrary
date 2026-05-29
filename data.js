@@ -61,6 +61,15 @@ const CARDS = [
   videoUrl: "https://res1.applovin.com/re3d42cc/f28e15743848dc4310067041b7ba6f8ec9db6f2d_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
 },
+  {
+  id: "K9Soothe-AnimatedCorgie-AllNaturalComfortCare",
+  title: "Animated Corgie – All Natural Comfort Care",
+  videoUrl: "https://res1.applovin.com/r11ca6d2/db29bd4e649057995e4e873ecdc463b78527bb6d_raw.mp4",
+  ctaColor: "#27FF00",
+  ctaText: "Shop Now",
+  client: "K9Soothe",
+  fileName: "Interactive-K9Soothe-AnimatedCorgie-AllNaturalComfortCare_mp4.html",
+},
 {
   id: 41,
   name: "Every Mood Has A Recipe",
@@ -130,6 +139,15 @@ const CARDS = [
   date: "May 19, 2026",
   videoUrl: "https://res1.applovin.com/re3d42cc/c76389929a12dc938bd57e0819c2a190d4cef4c2_raw.mp4",
   driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
+},
+  {
+  id: "K9Soothe-Frenchie-BringBackTailWags",
+  title: "Frenchie – Bring Back Tail Wags",
+  videoUrl: "https://res1.applovin.com/r11ca6d2/ef20ee90160143ce98d1dbfb5a0b1c5d02f854e5_raw.mp4",
+  ctaColor: "#00FF03",
+  ctaText: "Shop Now",
+  client: "K9Soothe",
+  fileName: "Interactive-K9Soothe-Frenchie-BringBackTailWags_mp4.html",
 },
   {
   id: 34,
@@ -262,6 +280,15 @@ const CARDS = [
     videoUrl: "https://res1.applovin.com/re3d42cc/7996ea4c8ebbd5a1fa2799dad0be9e6b8b95eabc_raw.mp4",
     driveUrl: "https://drive.google.com/drive/folders/1CruI5prr3ULqoySBxQgwF_t8JIPCmfcc",
   },
+  {
+  id: "K9Soothe-RedBenefitsList-GoldenRetriever-HappyDogLife",
+  title: "Red Benefits List – Golden Retriever – Happy Dog Life",
+  videoUrl: "https://res1.applovin.com/r11ca6d2/a014bb8b2ffc67b75103333824c607a41516ced2_raw.mp4",
+  ctaColor: "#00FF0B",
+  ctaText: "Shop Now",
+  client: "K9Soothe",
+  fileName: "Interactive-K9Soothe-RedBenefitsList-GoldenRetriever-HappyDogLife_mp4.html",
+},
   {
     id: 10,
     name: "MOOD Merge — Gamified",
